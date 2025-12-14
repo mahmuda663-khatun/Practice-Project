@@ -3,10 +3,10 @@ const contactForm = document.getElementById("contactForm");
 if (contactForm) {
     document.addEventListener("submit", (e) => {
         e.preventDefault();
-        const inputName = document.getElementById("name").Value.trim();
-        const email = document.getElementById("email").Value.trim();
-        const phone = document.getElementById("phone").Value.trim();
-        const message = document.getElementById("message").Value.trim();
+        const inputName = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const phone = document.getElementById("phone").value.trim();
+        const message = document.getElementById("message").value.trim();
 
         let isValid = true;
         let errorMessage = "";
@@ -52,7 +52,7 @@ if (contactForm) {
 // timer script //
 
 const updateDateTime = () => {
-    const timeContainer = document.getElementById("dateYime")
+    const timeContainer = document.getElementById("dateTime")
     if (timeContainer) {
         const now = new Date();
         const localFormate = now.toLocaleString()
